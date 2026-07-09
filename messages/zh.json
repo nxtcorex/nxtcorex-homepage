@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "首页",
+    "contact": "联系方式"
+  },
+  "home": {
+    "title": "nxtcorex",
+    "cta": "联系方式"
+  },
+  "contact": {
+    "title": "联系方式",
+    "email": "邮箱",
+    "emailAddress": "nxtcorex@org.furry.sarl",
+    "social": "社交媒体"
+  },
+  "footer": {
+    "copyright": "© 2026 nxtcorex. 保留所有权利。"
+  }
+}

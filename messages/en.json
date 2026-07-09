@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "nxtcorex",
+    "cta": "Contact"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "Email",
+    "emailAddress": "nxtcorex@org.furry.sarl",
+    "social": "Social Media"
+  },
+  "footer": {
+    "copyright": "© 2026 nxtcorex. All rights reserved."
+  }
+}
