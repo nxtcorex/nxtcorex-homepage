@@ -2,18 +2,33 @@
 
 import * as React from "react";
 
+function applyTheme(theme: "light" | "dark") {
+  document.documentElement.classList.remove("light", "dark");
+  document.documentElement.classList.add(theme);
+}
+
+function resolveTheme(): "light" | "dark" {
+  const storedTheme = localStorage.getItem("theme");
+  if (storedTheme === "light" || storedTheme === "dark") {
+    return storedTheme;
+  }
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+}
+
 export function ThemeInitializer() {
   React.useEffect(() => {
-    // Check if theme preference is stored
-    const storedTheme = localStorage.getItem("theme");
-    
-    if (storedTheme) {
-      document.documentElement.classList.remove("light", "dark");
-      document.documentElement.classList.add(storedTheme);
-    } else {
-      // Default to light theme
-      document.documentElement.classList.add("light");
-    }
+    applyTheme(resolveTheme());
+
+    const media = window.matchMedia("(prefers-color-scheme: dark)");
+    const onChange = () => {
+      if (!localStorage.getItem("theme")) {
+        applyTheme(media.matches ? "dark" : "light");
+      }
+    };
+    media.addEventListener("change", onChange);
+    return () => media.removeEventListener("change", onChange);
   }, []);
 
   return null;
