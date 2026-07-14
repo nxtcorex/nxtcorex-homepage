@@ -32,6 +32,19 @@ export function Footer({ lang, messages }: FooterProps) {
             >
               京ICP备2025138063号-2
             </a>
+            <a
+              href="https://beian.mps.gov.cn/#/query/webSearch?code=11011402056544"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 text-sm text-neutral-600 dark:text-neutral-400"
+            >
+              <img
+                src="/备案图标.png"
+                alt=""
+                className="h-4 w-4"
+              />
+              京公网安备11011402056544号
+            </a>
           </div>
         </div>
       </div>
