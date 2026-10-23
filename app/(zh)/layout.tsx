@@ -16,8 +16,8 @@ export default async function ZhLayout({
       <ThemeInitializer />
       <ScrollRevealInitializer />
       <Navigation lang="zh" messages={messages} />
-      <main className="min-h-screen">{children}</main>
-      <Footer lang="zh" messages={messages} />
+      <main className="flex-1">{children}</main>
+      <Footer messages={messages} />
     </>
   );
 }

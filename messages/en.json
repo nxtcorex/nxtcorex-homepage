@@ -1,11 +1,37 @@
 {
   "nav": {
     "home": "Home",
+    "projects": "Projects",
     "contact": "Contact"
   },
   "home": {
     "title": "nxtcorex",
-    "cta": "Contact"
+    "description": "The official website of nxtcorex",
+    "cta": {
+      "projects": "View projects",
+      "contact": "Contact"
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "The projects we currently offer. Each one links straight to the live service.",
+      "more": "All projects"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "The projects and services we offer, with live URLs and current status. Feel free to try them out.",
+    "visit": "Visit site",
+    "status": {
+      "online": "Online",
+      "beta": "Public beta",
+      "wip": "In development"
+    },
+    "items": {
+      "nextapi": {
+        "tagline": "An all-in-one API aggregation platform with 30+ ready-to-use endpoints.",
+        "description": "It gathers the small endpoints developers keep rewriting — IP lookup, encoding, hashing, URL handling, whois, exchange rates, QR codes — and gives every one of them an online debug page, callable without an account. The site is bilingual, and a registered account adds per-user usage stats."
+      }
+    }
   },
   "contact": {
     "title": "Contact Us",

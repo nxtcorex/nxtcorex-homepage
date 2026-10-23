@@ -47,8 +47,8 @@ export default async function EnglishLayout({
       <ThemeInitializer />
       <ScrollRevealInitializer />
       <Navigation lang="en" messages={messages} />
-      <main className="min-h-screen">{children}</main>
-      <Footer lang="en" messages={messages} />
+      <main className="flex-1">{children}</main>
+      <Footer messages={messages} />
     </>
   );
 }

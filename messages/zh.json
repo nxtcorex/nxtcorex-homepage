@@ -1,11 +1,37 @@
 {
   "nav": {
     "home": "首页",
+    "projects": "项目",
     "contact": "联系方式"
   },
   "home": {
     "title": "nxtcorex",
-    "cta": "联系方式"
+    "description": "nxtcorex 官方网站",
+    "cta": {
+      "projects": "查看项目",
+      "contact": "联系方式"
+    },
+    "projects": {
+      "title": "项目",
+      "description": "我们目前对外提供的服务，点击可直接访问。",
+      "more": "查看全部项目"
+    }
+  },
+  "projects": {
+    "title": "项目",
+    "description": "这里收录我们对外提供的项目与服务，附在线地址与当前状态，欢迎试用。",
+    "visit": "访问站点",
+    "status": {
+      "online": "已上线",
+      "beta": "公测中",
+      "wip": "开发中"
+    },
+    "items": {
+      "nextapi": {
+        "tagline": "一站式 API 服务聚合平台，30 多个常用接口开箱即用。",
+        "description": "把 IP 查询、编码转换、哈希、URL 处理、whois、汇率、二维码这些日常开发要用的小接口集中到一处，每个接口都配在线调试页，无需注册即可直接调用；站点支持中英双语，注册账号后可查看调用统计。"
+      }
+    }
   },
   "contact": {
     "title": "联系方式",

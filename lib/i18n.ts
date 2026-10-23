@@ -1,3 +1,5 @@
+import { type ProjectStatus } from "@/lib/projects";
+
 export const locales = ["en", "zh"] as const;
 export type Locale = (typeof locales)[number];
 
@@ -6,11 +8,28 @@ export const defaultLocale: Locale = "zh";
 export interface Messages {
   nav: {
     home: string;
+    projects: string;
     contact: string;
   };
   home: {
     title: string;
-    cta: string;
+    description: string;
+    cta: {
+      projects: string;
+      contact: string;
+    };
+    projects: {
+      title: string;
+      description: string;
+      more: string;
+    };
+  };
+  projects: {
+    title: string;
+    description: string;
+    visit: string;
+    status: Record<ProjectStatus, string>;
+    items: Record<string, { tagline: string; description: string }>;
   };
   contact: {
     title: string;
