@@ -19,17 +19,26 @@
   },
   "projects": {
     "title": "Projects",
-    "description": "The projects and services we offer, with live URLs and current status. Feel free to try them out.",
+    "description": "A showcase of the projects and services we offer.",
     "visit": "Visit site",
+    "visitApp": "Get the app",
     "status": {
       "online": "Online",
       "beta": "Public beta",
       "wip": "In development"
     },
+    "categories": {
+      "website": "Websites",
+      "app": "Apps"
+    },
     "items": {
       "nextapi": {
         "tagline": "An all-in-one API aggregation platform with 30+ ready-to-use endpoints.",
         "description": "It gathers the small endpoints developers keep rewriting — IP lookup, encoding, hashing, URL handling, whois, exchange rates, QR codes — and gives every one of them an online debug page, callable without an account. The site is bilingual, and a registered account adds per-user usage stats."
+      },
+      "wanyin": {
+        "tagline": "A local music player built for Wear OS and custom-Android watches.",
+        "description": "It scans the music on your watch (or a folder you choose) and browses it by song, album, artist or folder with playlist support. Lyrics sync line by line with optional translations, and the theme takes its colors from cover art or wallpaper. It adapts to round and square screens with Material 3 Expressive and MIUIX looks, and can check for updates and install them right in the app."
       }
     }
   },

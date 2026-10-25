@@ -1,4 +1,4 @@
-import { type ProjectStatus } from "@/lib/projects";
+import { type ProjectCategory, type ProjectStatus } from "@/lib/projects";
 
 export const locales = ["en", "zh"] as const;
 export type Locale = (typeof locales)[number];
@@ -28,7 +28,9 @@ export interface Messages {
     title: string;
     description: string;
     visit: string;
+    visitApp: string;
     status: Record<ProjectStatus, string>;
+    categories: Record<ProjectCategory, string>;
     items: Record<string, { tagline: string; description: string }>;
   };
   contact: {
